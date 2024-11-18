@@ -28,6 +28,8 @@ body {
   font-size: 22px;
   line-height: 1.7;
   color: var(--black);
+  zoom: 0.65; /* 0.9 means 90% of the original size */
+
 }
 
 .visually-hidden {
