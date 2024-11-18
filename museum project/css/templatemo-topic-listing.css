@@ -9,7 +9,7 @@ https://templatemo.com/tm-590-topic-listing
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
-:root {
+/* :root {
   --white-color:                  #ffffff;
   --primary-color:                #13547a;
   --secondary-color:              #021c19;
@@ -43,7 +43,7 @@ https://templatemo.com/tm-590-topic-listing
   --font-weight-medium:           500;
   --font-weight-semibold:         600;
   --font-weight-bold:             700;
-}
+} */
 
 body {
   background-color:rgb(0, 0, 0);
