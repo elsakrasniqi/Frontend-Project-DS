@@ -54,3 +54,11 @@ function addRipple(event) {
 }
 
 paymentBtn.addEventListener('click', addRipple);
+
+  function playVideo(event) {
+    event.preventDefault(); // Prevent the default link action
+    var video = document.getElementById('myVideo');
+    if (video) {
+      video.play();
+    }
+  }
