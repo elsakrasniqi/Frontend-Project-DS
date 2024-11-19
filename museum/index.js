@@ -62,3 +62,6 @@ paymentBtn.addEventListener('click', addRipple);
       video.play();
     }
   }
+
+
+  
