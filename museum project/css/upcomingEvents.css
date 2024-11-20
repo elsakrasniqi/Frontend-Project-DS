@@ -5,6 +5,10 @@ body {
     color: #e6e6e6;
 }
 
+.carousel-inner {
+    display: flex;
+}
+
 /* Carousel Container */
 .carousel {
     margin: 2rem auto;
@@ -16,14 +20,16 @@ body {
 
 /* Slide Layout */
 .carousel-item {
-    display: flex;
-    align-items: stretch;
-    min-height: 400px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .w-70 {
     flex: 70%;
-    background-color: #1b1818;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border: none;
 }
 
 .w-70 img {
@@ -45,47 +51,29 @@ body {
 }
 
 /* Text Area Styling */
-.w-30 h5 {
-    font-size: 1.8rem;
+.w-30 h5 a {
+    font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.w-30 h5 a:hover {
+    color: #e5533b;
+    transform: translateY(-3px);
+    letter-spacing: 0.5px;
 }
 
 .w-30 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    margin-top: 30px;
+    font-size: 0.8rem;
     color: #dcdcdc;
 }
 
-/* Carousel Controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #ff6347;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    background-size: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    transform: scale(1.2);
-    background-color: #e5533b;
-}
-
-/* Button Container */
-button.carousel-control-prev,
-button.carousel-control-next {
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-button.carousel-control-prev:hover,
-button.carousel-control-next:hover {
-    opacity: 1;
+.w-30 p span{
+    display: block;
 }
 
 /* Smooth Transition for Carousel */
