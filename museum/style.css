@@ -330,7 +330,7 @@ fieldset {
 
 .title--underline {
   position: relative;
-  margin-bottom: var(--margin-b);
+  margin-bottom: 35px;
   padding-bottom: 28px;
 }
 
@@ -442,7 +442,7 @@ fieldset {
   height: 600px;
   overflow: hidden;
   right: 150px;
-  top: 150px;
+  top: 90px;
 }
 
 .explore__image--after {
