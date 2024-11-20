@@ -235,31 +235,554 @@ m320 0 l0 -275 -50 0 -50 0 0 275 0 275 50 0 50 0 0 -275z m-550 60 l0 -25
                     <button type="button" class="order-form__btn" aria-label="remove one ticket" onclick="this.nextElementSibling.stepDown(1)">
                       <svg width="17" height="17" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z" fill="white"/>
-                        </svg>
-                    </button>
-                    <input type="number" class="order-form__qty" min="0" max="20" value="1" id="preview-ticket_18_amount">
-                    <button type="button" class="order-form__btn" aria-label="add one ticket" onclick="this.previousElementSibling.stepUp(1)">
-                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z" fill="white"/>
-                        </svg>
-                    </button>
-                  </div>
-                </fieldset>
-                <fieldset class="order-form__ticket-category">
-                  <label class="order-form__label">
-                    Senior 65+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://lh3.googleusercontent.com/J0sw0IiqP2F4gavYnI-vUa5IBgHiHy42lohgm-qq1vuygUX0HQgylVSV1ZdDTV5XIg=s1200"
+    />
+    <title>Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="#" aria-label="Museum logo">
+          <svg
+            width="49"
+            height="26"
+            viewBox="0 0 49 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M49 26H0L24.5 0L49 26ZM13.3075 13.1309L16.6442 16.6702L19.981 13.1309L16.6442 9.58115L13.3075 13.1309ZM16.6442 25.0052L19.981 21.466L16.6442 17.9162L13.3075 21.466L16.6442 25.0052ZM32.4083 25.0052L35.745 21.466L32.4083 17.9162L29.019 21.466L32.4083 25.0052ZM28.4673 5.40314C28.4473 5.43762 28.4207 5.46941 28.3885 5.49738C27.3507 6.6178 26.2997 7.73822 25.2357 8.84817C25.1437 8.94241 25.2357 9.00524 25.2357 9.08901L28.3097 12.356L28.4542 12.4921L31.7909 8.96335L28.4673 5.40314ZM8.78847 25.0052L8.91984 24.8691L11.9938 21.6126C12.0428 21.5717 12.0702 21.5173 12.0702 21.4607C12.0702 21.4042 12.0428 21.3498 11.9938 21.3089C11.0611 20.3456 10.1547 19.3613 9.23512 18.3874L8.78847 17.9162L5.45174 21.466L8.78847 25.0052ZM17.2354 8.95288L20.5721 12.4921L20.6772 12.3979L23.8169 9.06806C23.922 8.95288 23.8169 8.89005 23.8169 8.80628L20.7429 5.56021L20.6115 5.42408L17.2354 8.95288ZM17.2354 17.3298L20.5721 20.8691L20.7429 20.7016C21.7413 19.6545 22.7528 18.6073 23.7643 17.4869C23.7926 17.4663 23.8152 17.4412 23.8307 17.4133C23.8461 17.3853 23.8541 17.3551 23.8541 17.3246C23.8541 17.2941 23.8461 17.2639 23.8307 17.2359C23.8152 17.208 23.7926 17.1829 23.7643 17.1623C22.8185 16.1675 21.8727 15.1728 20.9399 14.1675L20.5721 13.7906L17.2354 17.3298ZM32.9995 17.3298L36.3362 20.8691L39.6729 17.3298L36.3362 13.7906L32.9995 17.3298ZM28.4673 13.7801V13.8534L25.3013 17.2147C25.1962 17.3089 25.2357 17.3717 25.3013 17.4555L28.244 20.5969C28.3228 20.6911 28.4147 20.7853 28.5198 20.8901L31.8566 17.3508L28.4673 13.7801ZM12.7295 20.8482C12.7453 20.8175 12.7675 20.7892 12.7952 20.7644L15.9611 17.4031C16.0531 17.2984 15.9611 17.2461 15.9611 17.1623L12.8477 13.8953C12.8069 13.8484 12.7583 13.8061 12.7032 13.7696L9.37962 17.2984L12.7295 20.8482ZM32.3558 16.6597L35.6925 13.1204L32.3558 9.59162L29.019 13.1309L32.3558 16.6597ZM24.4737 8.28272L27.8105 4.74346L24.5263 1.27749H24.4606L21.2552 4.71204C21.2354 4.73712 21.2249 4.76616 21.2249 4.79581C21.2249 4.82546 21.2354 4.8545 21.2552 4.87958L24.4737 8.28272ZM24.4737 16.6597L27.8105 13.1204L24.5 9.58115L21.1633 13.1309L24.4737 16.6597ZM24.4737 25.0366L27.8105 21.4974L24.4737 17.9476L21.1633 21.466L24.4737 25.0366ZM40.2378 25.0366L43.5745 21.4974L40.2509 17.9791H40.1853L36.9668 21.3613C36.8617 21.4764 36.9668 21.5288 36.9668 21.6021L39.5941 24.4398L40.2378 25.0366ZM1.89169 25.2356H7.88204L4.91314 22.0942L1.89169 25.2356ZM41.1705 25.2356H47.1083L44.1394 22.0942L41.1705 25.2356ZM23.5542 25.2356L20.5721 22.0942L17.5901 25.2356H23.5542ZM33.3147 25.2356H39.2525L36.2836 22.0942L33.3147 25.2356ZM31.3968 25.2356L28.4279 22.0942L25.459 25.2356H31.3968ZM15.6327 25.2356L12.6638 22.0942L9.69491 25.2356H15.6327Z"
+              fill="white"
+            />
+          </svg>
+          <span class="logo__text">Eterna</span>
+        </a>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#welcome" class="navigation__link link"> Home </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#visiting" class="navigation__link link"> Explore </a>
+            </li>
+
+            <!-- <li class="navigation__item">
+            <a href="#video" class="navigation__link link" >
+              Video
+            </a>
+          </li> -->
+            <li class="navigation__item">
+              <a href="#gallery" class="navigation__link link"> Gallery </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#tickets" class="navigation__link link"> Tickets </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contacts" class="navigation__link link"> Contacts </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Eterna museum</h1>
+      <section class="welcome section--dark" id="welcome">
+        <div class="container welcome__container">
+          <div class="welcome__slider slider">
+            <div class="welcome__slide slide">
+              <img
+                class="welcome__img"
+                src="https://lh3.googleusercontent.com/J0sw0IiqP2F4gavYnI-vUa5IBgHiHy42lohgm-qq1vuygUX0HQgylVSV1ZdDTV5XIg=s1200"
+                alt="Girl with the a pearl earring by Johannes Vermeer"
+              />
+            </div>
+            <!--
+          <div class="welcome__slide slide">
+            <img class="welcome__img" src="./assets/img/welcome/liberty.jpg" alt="Liberty Leading the People by  Eugene Delacroix">
+          </div>
+          <div class="welcome__slide slide">
+            <img class="welcome__img" src="./assets/img/welcome/labelle.jpg" alt="Portrait of an Unknown Woman by Leonardo Da Vinci">
+          </div>
+          <div class="welcome__slide slide">
+            <img class="welcome__img" src="./assets/img/welcome/medusa.jpg" alt="The Raft of the Medusa by Théodore Géricault">
+          </div>
+          <div class="welcome__slide slide">
+            <img class="welcome__img" src="./assets/img/welcome/astronoom.jpg" alt="The Astronomer by Johannes Vermeer">
+          </div>
+            -->
+
+            <!-- <div class="slider__navigation">
+              <div class="slider__slides-counter">
+                <span class="slider__current-slide">01</span>
+                <span class="slider__number-divider">|</span>
+                <span class="slider__last-slide">05</span>
+              </div>
+              <div class="slider__dots">
+                <button class="slider__dot slider__dot--active active"></button>
+                <button class="slider__dot"></button>
+                <button class="slider__dot"></button>
+                <button class="slider__dot"></button>
+                <button class="slider__dot"></button>
+              </div>
+              <div class="slider__arrows">
+                <button class="slider__arrow slider__arrow--back">
+                  <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.34104 8C3.64162 6.31339 1.86127 5.08262 0 4.30769V3.69231C1.86127 2.89459 3.64162 1.66382 5.34104 0H6.75723C5.94798 1.4359 5.1657 2.52991 4.4104 3.28205H28V4.71795H4.4104C5.1657 5.47009 5.94798 6.5641 6.75723 8H5.34104Z" fill="white"/>
+                  </svg>
+                </button>
+                <button class="slider__arrow slider__arrow--forward">
+                  <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.659 -4.15048e-07C24.3584 1.68661 26.1387 2.91738 28 3.69231L28 4.30769C26.1387 5.10541 24.3584 6.33618 22.659 8L21.2428 8C22.052 6.5641 22.8343 5.47009 23.5896 4.71795L3.22792e-07 4.71795L4.64013e-07 3.28205L23.5896 3.28205C22.8343 2.52991 22.052 1.4359 21.2428 -5.25098e-07L22.659 -4.15048e-07Z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            </div> -->
+          </div>
+          <div class="welcome__content-wrapper">
+            <h2 class="section__title section__title--light welcome__title">
+              Welcome to&nbsp; Eterna <br />
+              Museum
+            </h2>
+            <p class="welcome__text">
+              From fortress to gallery,
+              <br />
+              a journey of preservation and culture
+            </p>
+            <a class="welcome__btn" href="tours/tour1.html" target="_blank">
+              Discover the Eterna
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="visiting" class="section visiting">
+        <div class="container">
+          <h2 class="section__title section__title--darker title--underline">
+            Virtual tour
+          </h2>
+          <div class="visiting__list">
+            <a href="tours/tour2.html" class="visiting__item" target="_blank">
+              <img
+                src="assets/img/visiting/royal-palace.jpg"
+                class="visiting__item-img"
+                aria-labelledby="title_1"
+                alt="See virtual tour of Royal Palace"
+                width="440"
+                height="285"
+              />
+              <h3 class="visiting__item-title" id="title_1">Royal Palace</h3>
+              <h4 class="visiting__item-subtitle">360° Virtual Tour</h4>
+              <p class="visiting__item-type">Google Street Panorama View</p>
+            </a>
+            <a href="tours/tour3.html" class="visiting__item" target="_blank">
+              <img
+                src="assets/img/visiting/denon-wing.jpg"
+                class="visiting__item-img"
+                aria-labelledby="title_2"
+                alt="See virtual tour of Denon Wing"
+                width="440"
+                height="285"
+              />
+              <h3 class="visiting__item-title" id="title_2">Denon Wing</h3>
+              <h4 class="visiting__item-subtitle">360° Virtual Tour</h4>
+              <p class="visiting__item-type">Google Street Panorama View</p>
+            </a>
+            <a href="tours/tour4.html" class="visiting__item" target="_blank">
+              <img
+                src="assets/img/visiting/collonnade-perrault.jpg"
+                class="visiting__item-img"
+                aria-labelledby="title_3"
+                alt="See virtual tour of Colonnade Perrault"
+                width="440"
+                height="285"
+              />
+              <h3 class="visiting__item-title" id="title_3">
+                Colonnade Perrault
+              </h3>
+              <h4 class="visiting__item-subtitle">360° Virtual Tour</h4>
+              <p class="visiting__item-type">Google Street Panorama View</p>
+            </a>
+            <a href="tours/tour5.html" class="visiting__item" target="_blank">
+              <img
+                src="assets/img/visiting/greek-hall.jpg"
+                class="visiting__item-img"
+                aria-labelledby="title_4"
+                alt="See virtual tour of Greek hall"
+                width="440"
+                height="285"
+              />
+              <h3 class="visiting__item-title" id="title_4">Greek hall</h3>
+              <p class="visiting__item-subtitle">360° Virtual Tour</p>
+              <p class="visiting__item-type">Google Street Panorama View</p>
+            </a>
+            <a href="tours/tour6.html" class="visiting__item" target="_blank">
+              <img
+                src="assets/img/visiting/mona-lisa.jpg"
+                class="visiting__item-img"
+                aria-labelledby="title_5"
+                alt="See virtual tour of Mona Lisa"
+                width="440"
+                height="285"
+              />
+              <h3 class="visiting__item-title" id="title_5">Mona Lisa</h3>
+              <p class="visiting__item-subtitle">360° Virtual Tour</p>
+              <p class="visiting__item-type">Google Street Panorama View</p>
+            </a>
+            <a href="tours/tour7.html" class="visiting__item" target="_blank">
+              <img
+                src="assets/img/visiting/night-palace.jpg"
+                class="visiting__item-img"
+                aria-labelledby="title_6"
+                alt="See virtual tour of Night Palace"
+                width="440"
+                height="285"
+              />
+              <h3 class="visiting__item-title" id="title_6">Night Palace</h3>
+              <p class="visiting__item-subtitle">360° Virtual Tour</p>
+              <p class="visiting__item-type">Google Street Panorama View</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery section section--dark">
+        <div class="container">
+          <h2 class="section__title section__title--light">Art gallery</h2>
+          <div class="gallery__container">
+            <div class="gallery__inner-container">
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery1.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery2.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery3.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery4.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery5.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery6.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery7.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery8.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery9.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery10.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery11.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery12.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery13.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery14.jpg"
+                alt="Artwork of Louvre collection"
+              />
+              <img
+                class="gallery__item"
+                src="./assets/img/gallery/galery15.jpg"
+                alt="Artwork of Louvre collection"
+              />
+            </div>
+            <div class="gallery__bottom"></div>
+          </div>
+        </div>
+      </section>
+      <section id="tickets" class="tickets section">
+        <div class="container">
+          <h2
+            class="section__title section__title--darker title--underline"
+            style="color: black"
+          >
+            Buy tickets
+          </h2>
+          <div class="tickets__container">
+            <div class="wrapper--wide">
+              <img
+                src="assets/img/visiting/night-palace.jpg"
+                width="1000"
+                height="750"
+                alt=""
+                class="tickets__img"
+              />
+            </div>
+            <div class="tickets__order-form order-form wrapper--thin">
+              <div class="fieldset-wrapper">
+                <fieldset class="order-form__ticket-types">
+                  <legend
+                    class="order-form___legend order-form___legend--ticket-type"
+                  >
+                    Ticket Type
+                  </legend>
+                  <div class="order-form__ticket-wrapper"></div>
+                  <label class="order-form__ticket-type radio">
+                    <input
+                      class="radio__btn"
+                      type="radio"
+                      checked="checked"
+                      id="permanent_exhibition"
+                      name="ticket-type"
+                    />
+                    <span class="radio__label">Permanent exhibition</span>
                   </label>
-                  <div class="order-form__amount-wrapper">
-                    <button type="button" class="order-form__btn" aria-label="remove one ticket" onclick="this.nextElementSibling.stepDown(1)">
-                      <svg width="17" height="17" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z" fill="white"/>
+                  <label class="order-form__ticket-type radio">
+                    <input
+                      class="radio__btn"
+                      type="radio"
+                      id="temporary_exhibition"
+                      name="ticket-type"
+                    />
+                    <span class="radio__label">Temporary exhibition</span>
+                  </label>
+                  <label class="order-form__ticket-type radio">
+                    <input
+                      class="radio__btn"
+                      type="radio"
+                      id="combined_admission"
+                      name="ticket-type"
+                    />
+                    <span class="radio__label">Combined Admission</span>
+                  </label>
+                </fieldset>
+                <fieldset class="order-form__amount">
+                  <fieldset class="order-form__ticket-category">
+                    <legend
+                      class="order-form___legend order-form___legend--right"
+                      style="text-align: left; font-size: 40px"
+                    >
+                      Amount
+                    </legend>
+                    <label class="order-form__label"> Basic 18+ </label>
+                    <div class="order-form__amount-wrapper">
+                      <button
+                        type="button"
+                        class="order-form__btn"
+                        aria-label="remove one ticket"
+                        onclick="this.nextElementSibling.stepDown(1)"
+                      >
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 16 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z"
+                            fill="white"
+                          />
                         </svg>
-                    </button>
-                    <input type="number" class="order-form__qty" min="0" max="20" value="1" id="preview-ticket_65_amount">
-                    <button type="button" class="order-form__btn" aria-label="add one ticket" onclick="this.previousElementSibling.stepUp(1)">
-                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z" fill="white"/>
+                      </button>
+                      <input
+                        type="number"
+                        class="order-form__qty"
+                        min="0"
+                        max="20"
+                        value="1"
+                        id="preview-ticket_18_amount"
+                      />
+                      <button
+                        type="button"
+                        class="order-form__btn"
+                        aria-label="add one ticket"
+                        onclick="this.previousElementSibling.stepUp(1)"
+                      >
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z"
+                            fill="white"
+                          />
                         </svg>
+                      </button>
+                    </div>
+                  </fieldset>
+                  <fieldset class="order-form__ticket-category">
+                    <label class="order-form__label"> Senior 65+ </label>
+                    <div class="order-form__amount-wrapper">
+                      <button
+                        type="button"
+                        class="order-form__btn"
+                        aria-label="remove one ticket"
+                        onclick="this.nextElementSibling.stepDown(1)"
+                      >
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 16 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        type="number"
+                        class="order-form__qty"
+                        min="0"
+                        max="20"
+                        value="1"
+                        id="preview-ticket_65_amount"
+                      />
+                      <button
+                        type="button"
+                        class="order-form__btn"
+                        aria-label="add one ticket"
+                        onclick="this.previousElementSibling.stepUp(1)"
+                      >
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </fieldset>
+                  <br />
+                  <br />
+                  <span class="order-form__total"> Total €220 </span>
+                  <button class="order-form__btn-buy">Buy Now</button>
+                </fieldset>
+              </div>
+              <!-- <span class="order-form__total"> Total €220 </span>
+              <button class="order-form__btn-buy">Buy Now</button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="paralax"></div>
+      <section id="contacts" class="contacts section">
+        <div class="container">
+          <h2 class="section__title section__title--darker title--underline">
+            Contacts
+          </h2>
+          <div class="contacts__container">
+            <dl class="contacts__list">
+              <div class="contacts__item-wrapper">
+                <dt class="visually-hidden">Museum</dt>
+                <dd class="contacts__item contacts__item--title">
+                  Musee du Eterna
+                </dd>
+              </div>
+              <div class="contacts__item-wrapper">
+                <dt>address:</dt>
+                <dd class="contacts__item">75001 Paris, France</dd>
+              </div>
+              <div class="contacts__item-wrapper">
+                <dt>phone:</dt>
+                <dd class="contacts__item">
+                  <a class="contacts__link" href="tel:33140205050">
+                    +33(0) 1 40 20 50 50
+                  </a>
+                </dd>
+              </div>
+              <div class="contacts__item-wrapper">
+                <dt>mail:</dt>
+                <dd class="contacts__item">
+                  <a class="contacts__link" href="mailto:info@louvre.fr">
+                    info@eterna.fr
+                  </a>
+                </dd>
+              </div>
+            </dl>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.874102782335!2d2.3350690763058584!3d48.86061107133252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre%20Museum!5e0!3m2!1sen!2s!4v1732093648150!5m2!1sen!2s"
+              width="960"
+              height="620"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              width="960"
+              height="620"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__container">
+        <a class="logo footer__logo" href="" aria-label="Museum logo">
+          <svg
+            width="49"
+            height="26"
+            viewBox="0 0 49 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M49 26H0L24.5 0L49 26ZM13.3075 13.1309L16.6442 16.6702L19.981 13.1309L16.6442 9.58115L13.3075 13.1309ZM16.6442 25.0052L19.981 21.466L16.6442 17.9162L13.3075 21.466L16.6442 25.0052ZM32.4083 25.0052L35.745 21.466L32.4083 17.9162L29.019 21.466L32.4083 25.0052ZM28.4673 5.40314C28.4473 5.43762 28.4207 5.46941 28.3885 5.49738C27.3507 6.6178 26.2997 7.73822 25.2357 8.84817C25.1437 8.94241 25.2357 9.00524 25.2357 9.08901L28.3097 12.356L28.4542 12.4921L31.7909 8.96335L28.4673 5.40314ZM8.78847 25.0052L8.91984 24.8691L11.9938 21.6126C12.0428 21.5717 12.0702 21.5173 12.0702 21.4607C12.0702 21.4042 12.0428 21.3498 11.9938 21.3089C11.0611 20.3456 10.1547 19.3613 9.23512 18.3874L8.78847 17.9162L5.45174 21.466L8.78847 25.0052ZM17.2354 8.95288L20.5721 12.4921L20.6772 12.3979L23.8169 9.06806C23.922 8.95288 23.8169 8.89005 23.8169 8.80628L20.7429 5.56021L20.6115 5.42408L17.2354 8.95288ZM17.2354 17.3298L20.5721 20.8691L20.7429 20.7016C21.7413 19.6545 22.7528 18.6073 23.7643 17.4869C23.7926 17.4663 23.8152 17.4412 23.8307 17.4133C23.8461 17.3853 23.8541 17.3551 23.8541 17.3246C23.8541 17.2941 23.8461 17.2639 23.8307 17.2359C23.8152 17.208 23.7926 17.1829 23.7643 17.1623C22.8185 16.1675 21.8727 15.1728 20.9399 14.1675L20.5721 13.7906L17.2354 17.3298ZM32.9995 17.3298L36.3362 20.8691L39.6729 17.3298L36.3362 13.7906L32.9995 17.3298ZM28.4673 13.7801V13.8534L25.3013 17.2147C25.1962 17.3089 25.2357 17.3717 25.3013 17.4555L28.244 20.5969C28.3228 20.6911 28.4147 20.7853 28.5198 20.8901L31.8566 17.3508L28.4673 13.7801ZM12.7295 20.8482C12.7453 20.8175 12.7675 20.7892 12.7952 20.7644L15.9611 17.4031C16.0531 17.2984 15.9611 17.2461 15.9611 17.1623L12.8477 13.8953C12.8069 13.8484 12.7583 13.8061 12.7032 13.7696L9.37962 17.2984L12.7295 20.8482ZM32.3558 16.6597L35.6925 13.1204L32.3558 9.59162L29.019 13.1309L32.3558 16.6597ZM24.4737 8.28272L27.8105 4.74346L24.5263 1.27749H24.4606L21.2552 4.71204C21.2354 4.73712 21.2249 4.76616 21.2249 4.79581C21.2249 4.82546 21.2354 4.8545 21.2552 4.87958L24.4737 8.28272ZM24.4737 16.6597L27.8105 13.1204L24.5 9.58115L21.1633 13.1309L24.4737 16.6597ZM24.4737 25.0366L27.8105 21.4974L24.4737 17.9476L21.1633 21.466L24.4737 25.0366ZM40.2378 25.0366L43.5745 21.4974L40.2509 17.9791H40.1853L36.9668 21.3613C36.8617 21.4764 36.9668 21.5288 36.9668 21.6021L39.5941 24.4398L40.2378 25.0366ZM1.89169 25.2356H7.88204L4.91314 22.0942L1.89169 25.2356ZM41.1705 25.2356H47.1083L44.1394 22.0942L41.1705 25.2356ZM23.5542 25.2356L20.5721 22.0942L17.5901 25.2356H23.5542ZM33.3147 25.2356H39.2525L36.2836 22.0942L33.3147 25.2356ZM31.3968 25.2356L28.4279 22.0942L25.459 25.2356H31.3968ZM15.6327 25.2356L12.6638 22.0942L9.69491 25.2356H15.6327Z"
+              fill="white"
+            />
                     </button>
                   </div>
                 </fieldset>
@@ -565,65 +1088,146 @@ m320 0 l0 -275 -50 0 -50 0 0 275 0 275 50 0 50 0 0 -275z m-550 60 l0 -25
               <span class="booking-overview__total-heading">Total:</span>
               <span class="booking-overview__total-amount">60 €</span>
             </div>
-          <div class="booking-card">
-            <div class="card card--front">
-              <div class="card__field">
-                <label for="cardnumber">Card number</label>
-                <input class="input-card-number" type="text" id="cardnumber" name="cardnumber" placeholder="" pattern="\d*" title="Card number">
-              </div>
-              <div class="card__field">
-                <label>Expiration date</label>
+            <div class="booking-card">
+              <div class="card card--front">
+                <div class="card__field">
+                  <label for="cardnumber">Card number</label>
+                  <input
+                    class="input-card-number"
+                    type="text"
+                    id="cardnumber"
+                    name="cardnumber"
+                    placeholder=""
+                    pattern="\d*"
+                    title="Card number"
+                  />
+                </div>
+                <div class="card__field">
+                  <label>Expiration date</label>
                   <div class="exp-wrapper">
                     <div class="ext-wrapper--month">
-                      <input class="input-exp input-exp--month" type="number" id="expmonth" name="expmonth" min="1" max="12" value="03" title="Card expiration month" readonly="readonly">
+                      <input
+                        class="input-exp input-exp--month"
+                        type="number"
+                        id="expmonth"
+                        name="expmonth"
+                        min="1"
+                        max="12"
+                        value="03"
+                        title="Card expiration month"
+                        readonly="readonly"
+                      />
                       <button type="button" class="exp--month__btn btn--up">
-                        <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3.00343 0L0.00390625 4H6.00391L3.00343 0Z" fill="#A4A4A3"/>
+                        <svg
+                          width="7"
+                          height="4"
+                          viewBox="0 0 7 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.00343 0L0.00390625 4H6.00391L3.00343 0Z"
+                            fill="#A4A4A3"
+                          />
                         </svg>
                       </button>
                       <button type="button" class="exp--month__btn btn--down">
-                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3.00182 4.00049L6 0.000488281H0L3.00182 4.00049Z" fill="#A4A4A3"/>
+                        <svg
+                          width="6"
+                          height="4"
+                          viewBox="0 0 6 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.00182 4.00049L6 0.000488281H0L3.00182 4.00049Z"
+                            fill="#A4A4A3"
+                          />
                         </svg>
                       </button>
                     </div>
                     <div class="ext-wrapper--year">
-                      <input class="input-exp input-exp--year" type="number" id="expyear" name="expyear" min="2021" max="2036" value="2024"  title="Card expiration year" readonly="readonly">
+                      <input
+                        class="input-exp input-exp--year"
+                        type="number"
+                        id="expyear"
+                        name="expyear"
+                        min="2021"
+                        max="2036"
+                        value="2024"
+                        title="Card expiration year"
+                        readonly="readonly"
+                      />
                       <button type="button" class="exp--year__btn btn--up">
-                        <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3.00343 0L0.00390625 4H6.00391L3.00343 0Z" fill="#A4A4A3"/>
+                        <svg
+                          width="7"
+                          height="4"
+                          viewBox="0 0 7 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.00343 0L0.00390625 4H6.00391L3.00343 0Z"
+                            fill="#A4A4A3"
+                          />
                         </svg>
                       </button>
                       <button type="button" class="exp--year__btn btn--down">
-                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3.00182 4.00049L6 0.000488281H0L3.00182 4.00049Z" fill="#A4A4A3"/>
+                        <svg
+                          width="6"
+                          height="4"
+                          viewBox="0 0 6 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.00182 4.00049L6 0.000488281H0L3.00182 4.00049Z"
+                            fill="#A4A4A3"
+                          />
                         </svg>
                       </button>
                     </div>
+                  </div>
+                </div>
+                <div class="card__field">
+                  <label>Cardholder name</label>
+                  <input
+                    class="input-cardholder"
+                    type="text"
+                    id="cardholder"
+                    name="cardholder"
+                    placeholder=""
+                    pattern="\d*"
+                    title="Cardholder name"
+                  />
                 </div>
               </div>
-              <div class="card__field">
-                <label>Cardholder name</label>
-                <input class="input-cardholder" type="text" id="cardholder" name="cardholder" placeholder="" pattern="\d*" title="Cardholder name">
+              <div class="card card--back">
+                <div class="card__field card__field--cvc">
+                  <label for="cardcvc">CVC/CVV</label>
+                  <input
+                    class="input-cvc"
+                    type="text"
+                    id="cardcvc"
+                    name="cardcvc"
+                    placeholder=""
+                    pattern="\d*"
+                    title="CVC/CVV"
+                  />
+                </div>
+                <span class="card__text"
+                  >The last 3&nbsp;or&nbsp;4 digits on back of&nbsp;the
+                  card</span
+                >
               </div>
             </div>
-            <div class="card card--back">
-              <div class="card__field card__field--cvc">
-                <label for="cardcvc">CVC/CVV</label>
-                <input class="input-cvc" type="text" id="cardcvc" name="cardcvc" placeholder="" pattern="\d*" title="CVC/CVV">
-              </div>
-              <span class="card__text">The last 3&nbsp;or&nbsp;4 digits on back of&nbsp;the card</span>
-            </div>
+            <button class="booking-payment__btn" type="submit">Book</button>
           </div>
-          <button class="booking-payment__btn" type="submit">
-            Book
-          </button>
         </div>
       </div>
     </div>
-  </div>
-  <div class="overlay"></div>
-  <script src="index.js"></script>
-  <script src="gallery.js"></script>
-</body>
+    <div class="overlay"></div>
+    <script src="index.js"></script>
+      <script src="gallery.js"></script>
+  </body>
 </html>
