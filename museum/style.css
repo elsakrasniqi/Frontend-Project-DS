@@ -446,8 +446,9 @@ fieldset {
 
 .tickets__container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 60px;
+  justify-content: space-around;
 }
 
 .order-form {
@@ -459,6 +460,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
+  right: 0;
 }
 
 .order-form___legend {
@@ -564,6 +566,7 @@ fieldset {
 
 .order-form__amount {
   width: 150px;
+  margin-left: 200px;
 }
 
 .order-form__btn {
