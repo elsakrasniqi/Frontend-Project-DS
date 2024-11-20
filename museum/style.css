@@ -167,11 +167,11 @@ fieldset {
   transition: color 0.4s ease-in-out;
 }
 
-.navigation__link:hover,
+/* .navigation__link:hover,
 .navigation__link:active {
   color: var(--font-gold);
   transition: color 0.4s ease-in-out;
-}
+} */
 
 .welcome {
   background-color: var(--bg-dark);
