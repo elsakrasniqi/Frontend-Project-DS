@@ -47,3 +47,7 @@ function addRipple(event) {
 }
 
 paymentBtn.addEventListener('click', addRipple);
+
+
+
+  
