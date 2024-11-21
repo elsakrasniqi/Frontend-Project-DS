@@ -258,6 +258,7 @@ fieldset {
   transition: background-color ease-in-out 0.4s;
 }
 
+
 .section__title--darker {
   color: var(--font-gold);
 }
@@ -643,7 +644,7 @@ fieldset {
 
 .paralax {
   height: 400px;
-  background-image: url("./assets/img/paralax.jpg");
+  background-image: url("../assets/img/paralax.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1640,4 +1641,18 @@ select option:checked {
   .image-container img {
     height: 300px;
   }
+}
+
+.order-form__btn-buy {
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(62, 32, 1);
+  transition: background-color ease-in-out 0.4s;
+}
+
+.order-form__btn-buy:hover,
+.order-form__btn-buy:active {
+  background-color: var(--font-gold);
+  transition: background-color ease-in-out 0.4s;
 }
