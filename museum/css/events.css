@@ -35,6 +35,10 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.event-info h2{
+    color: #9d8665;
+}
+
 .more-details {
     flex: 7;
     margin-right: 1em;
