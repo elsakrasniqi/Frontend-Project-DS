@@ -644,7 +644,7 @@ fieldset {
 
 .paralax {
   height: 400px;
-  background-image: url("../assets/img/paralax.jpg");
+  background-image: url("../assets/img/viktor-forgacs-TLHBQtzAEfU-unsplash.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -886,9 +886,6 @@ fieldset {
   width: 100%;
 }
 
-.booking-info__header {
-
-}
 
 .booking-info__title {
   margin-bottom: 10px;
@@ -1646,7 +1643,7 @@ select option:checked {
 .order-form__btn-buy {
   display: block;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: rgb(62, 32, 1);
   transition: background-color ease-in-out 0.4s;
 }
@@ -1656,3 +1653,4 @@ select option:checked {
   background-color: var(--font-gold);
   transition: background-color ease-in-out 0.4s;
 }
+
