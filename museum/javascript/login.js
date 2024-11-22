@@ -61,6 +61,6 @@ loginFormElement.addEventListener('submit', (e) => {
     // alert("Login successful!");
     window.location.href = "index.html";
   } else {
-    alert("Invalid username or password.");
+    alert("Incorrect username or password.\nIf you don't have an account, please register.");
   }
 });
