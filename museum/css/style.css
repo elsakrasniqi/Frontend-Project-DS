@@ -643,7 +643,7 @@ fieldset {
 
 .paralax {
   height: 400px;
-  background-image: url("./assets/img/paralax.jpg");
+  background-image: url("../assets/img/para2.jpeg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1641,3 +1641,21 @@ select option:checked {
     height: 300px;
   }
 }
+
+.order-form__btn-buy{
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--white);
+  background-color: rgb(62, 32, 1);
+  border-radius: 10px;
+  transition: background-color ease-in-out 0.4s;
+
+}
+
+.order-form__btn-buy:hover,
+.order-form__btn-buy:active {
+  background-color: var(--font-gold);
+  transition: background-color ease-in-out 0.4s;
+}
+
