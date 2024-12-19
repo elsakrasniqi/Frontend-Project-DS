@@ -5,6 +5,6 @@ Eterna is a visually captivating front-end website inspired by the grandeur of t
 Developed by: <br>
 [Arijesa Muja](https://github.com/Arijesamujaa)<br>
 [Elsa Krasniqi](https://github.com/elsakrasniqi) <br>
-[Erjon Mehmeti](https://github.com/ErionMeh)<br>
+[Erion Mehmeti](https://github.com/ErionMeh)<br>
 [Florent Sylejmani](https://github.com/FlorentSy)<br>
 
